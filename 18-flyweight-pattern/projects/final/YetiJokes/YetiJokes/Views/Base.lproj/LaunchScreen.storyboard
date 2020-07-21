@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1au-YJ-Jwa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cool_yeti" translatesAutoresizingMaskIntoConstraints="NO" id="2Ft-MD-rwt">
+                                <rect key="frame" x="66" y="142" width="243" height="316"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="1au-YJ-Jwa" secondAttribute="bottom" id="0Rw-Ea-ggO"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Ft-MD-rwt" secondAttribute="bottom" constant="20" id="7ZC-Ov-6Ga"/>
+                            <constraint firstItem="2Ft-MD-rwt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" id="B6c-fL-BSe"/>
+                            <constraint firstAttribute="trailing" secondItem="1au-YJ-Jwa" secondAttribute="trailing" id="Ew9-p5-qCK"/>
+                            <constraint firstItem="2Ft-MD-rwt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QTe-oK-W8D"/>
+                            <constraint firstItem="2Ft-MD-rwt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="YiW-pT-A8F"/>
+                            <constraint firstItem="1au-YJ-Jwa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gYN-nc-7ia"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Ft-MD-rwt" secondAttribute="trailing" constant="20" id="rPT-PF-lgI"/>
+                            <constraint firstItem="2Ft-MD-rwt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="rVR-Af-0Wl"/>
+                            <constraint firstItem="1au-YJ-Jwa" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sUz-ub-nMP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1104" height="1104"/>
+        <image name="cool_yeti" width="243" height="316"/>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Overview'/>
+        <page name='Flyweight'/>
+        <page name='Mediator'/>
+        <page name='Composite'/>
+        <page name='Command'/>
+        <page name='ChainOfResponsibility'/>
+        <page name='Decorator'/>
+    </pages>
+</playground>

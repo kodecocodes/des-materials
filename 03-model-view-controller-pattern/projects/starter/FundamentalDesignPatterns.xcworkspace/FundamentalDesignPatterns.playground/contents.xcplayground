@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Overview'/>
+        <page name='Model-View-Controller'/>
+        <page name='Delegation'/>
+        <page name='Strategy'/>
+        <page name='Singleton'/>
+        <page name='Memento'/>
+        <page name='Observer'/>
+        <page name='Builder'/>
+    </pages>
+</playground>

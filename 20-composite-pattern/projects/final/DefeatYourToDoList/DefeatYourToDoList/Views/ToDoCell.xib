@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="cell" id="iN0-l3-epB" customClass="ToDoCell" customModule="DefeatYourToDoList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0c4-n6-lxN">
+                    <rect key="frame" x="66.5" y="15" width="278.5" height="17.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="y88-eN-hXj">
+                    <rect key="frame" x="66.5" y="53" width="278.5" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="piT-3u-qob">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRp-Uf-8QS">
+                    <rect key="frame" x="10" y="10.5" width="36.5" height="36.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mRp-Uf-8QS" secondAttribute="height" multiplier="1:1" id="mQw-Sv-E84"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mRp-Uf-8QS" firstAttribute="centerY" secondItem="0c4-n6-lxN" secondAttribute="centerY" constant="5" id="09j-CV-wqE"/>
+                <constraint firstItem="y88-eN-hXj" firstAttribute="width" secondItem="0c4-n6-lxN" secondAttribute="width" id="5DQ-Ub-bap"/>
+                <constraint firstItem="mRp-Uf-8QS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.1" id="LAm-HT-48Z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y88-eN-hXj" secondAttribute="trailing" constant="20" id="OXs-AV-wIp"/>
+                <constraint firstItem="mRp-Uf-8QS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="QJ9-Sm-Djd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0c4-n6-lxN" secondAttribute="trailing" constant="20" id="RDJ-X5-QjB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="y88-eN-hXj" secondAttribute="bottom" constant="3" id="ark-RK-hlX"/>
+                <constraint firstItem="0c4-n6-lxN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="igs-Rq-Ce6"/>
+                <constraint firstItem="y88-eN-hXj" firstAttribute="top" secondItem="0c4-n6-lxN" secondAttribute="bottom" constant="20" id="q6K-Do-AlP"/>
+                <constraint firstItem="0c4-n6-lxN" firstAttribute="leading" secondItem="mRp-Uf-8QS" secondAttribute="trailing" constant="20" id="rGn-2g-fdn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="checkBoxView" destination="mRp-Uf-8QS" id="XfY-ys-tp5"/>
+                <outlet property="subTaskCollectionView" destination="y88-eN-hXj" id="Uh2-CJ-4N8"/>
+                <outlet property="toDoLabel" destination="0c4-n6-lxN" id="ynd-qy-L8l"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="-195"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423102C120B02192002AA4D9 /* YelpCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423102C020B02192002AA4D9 /* YelpCategory.swift */; };
+		42E0393020B02E1700676A85 /* ReviewDateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0392F20B02E1700676A85 /* ReviewDateDetailsViewController.swift */; };
+		42E0393220B03B4800676A85 /* BusinessTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0393120B03B4800676A85 /* BusinessTableViewModel.swift */; };
+		42E0393420B03DA000676A85 /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0393320B03DA000676A85 /* BusinessTableViewCell.swift */; };
+		42E0393620B052C600676A85 /* YLPCoordinate+CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0393520B052C600676A85 /* YLPCoordinate+CLLocationCoordinate2D.swift */; };
+		42E8DB5920AB11AE0009A206 /* SearchColleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8DB5820AB11AE0009A206 /* SearchColleague.swift */; };
+		42F25F9720AE3DE400B0315A /* SearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25F9620AE3DE400B0315A /* SearchClient.swift */; };
+		42F25F9B20AE3F2800B0315A /* SearchColleagueMediating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25F9A20AE3F2800B0315A /* SearchColleagueMediating.swift */; };
+		42F25F9D20AE3F8000B0315A /* SearchClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25F9C20AE3F8000B0315A /* SearchClientDelegate.swift */; };
+		42F25F9F20AE405300B0315A /* YelpSearchColleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25F9E20AE405300B0315A /* YelpSearchColleague.swift */; };
+		42F25FA220AE6B7000B0315A /* CLLocationCoordinate2D+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25FA120AE6B7000B0315A /* CLLocationCoordinate2D+Hashable.swift */; };
+		42F25FA520AE70A000B0315A /* ContestedAnnotationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F25FA420AE70A000B0315A /* ContestedAnnotationTool.swift */; };
+		BDE48080FDC17096B987A559 /* Pods_YetiDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C74737C893B34921C2ABED8 /* Pods_YetiDate.framework */; };
+		C31F894E207C88960017FD25 /* BusinessMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31F894D207C88960017FD25 /* BusinessMapViewModel.swift */; };
+		C33AAC7E207E8C16001DA1A4 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AAC7D207E8C16001DA1A4 /* Mediator.swift */; };
+		C3D7376A206EB1E800EB0A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D73769206EB1E800EB0A0B /* AppDelegate.swift */; };
+		C3D7376C206EB1E800EB0A0B /* PlanDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7376B206EB1E800EB0A0B /* PlanDateViewController.swift */; };
+		C3D7376F206EB1E800EB0A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7376D206EB1E800EB0A0B /* Main.storyboard */; };
+		C3D73771206EB1EA00EB0A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D73770206EB1EA00EB0A0B /* Assets.xcassets */; };
+		C3D73774206EB1EA00EB0A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D73772206EB1EA00EB0A0B /* LaunchScreen.storyboard */; };
+		C3D737802072AE0E00EB0A0B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7377F2072AE0E00EB0A0B /* APIKeys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		423102C020B02192002AA4D9 /* YelpCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpCategory.swift; sourceTree = "<group>"; };
+		42E0392F20B02E1700676A85 /* ReviewDateDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDateDetailsViewController.swift; sourceTree = "<group>"; };
+		42E0393120B03B4800676A85 /* BusinessTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewModel.swift; sourceTree = "<group>"; };
+		42E0393320B03DA000676A85 /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
+		42E0393520B052C600676A85 /* YLPCoordinate+CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPCoordinate+CLLocationCoordinate2D.swift"; sourceTree = "<group>"; };
+		42E8DB5820AB11AE0009A206 /* SearchColleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchColleague.swift; sourceTree = "<group>"; };
+		42F25F9620AE3DE400B0315A /* SearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchClient.swift; sourceTree = "<group>"; };
+		42F25F9A20AE3F2800B0315A /* SearchColleagueMediating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchColleagueMediating.swift; sourceTree = "<group>"; };
+		42F25F9C20AE3F8000B0315A /* SearchClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchClientDelegate.swift; sourceTree = "<group>"; };
+		42F25F9E20AE405300B0315A /* YelpSearchColleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchColleague.swift; sourceTree = "<group>"; };
+		42F25FA120AE6B7000B0315A /* CLLocationCoordinate2D+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Hashable.swift"; sourceTree = "<group>"; };
+		42F25FA420AE70A000B0315A /* ContestedAnnotationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContestedAnnotationTool.swift; sourceTree = "<group>"; };
+		4C74737C893B34921C2ABED8 /* Pods_YetiDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YetiDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		911AD5A8FEB4681A325230EE /* Pods-YetiDate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetiDate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YetiDate/Pods-YetiDate.debug.xcconfig"; sourceTree = "<group>"; };
+		C31F894D207C88960017FD25 /* BusinessMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessMapViewModel.swift; sourceTree = "<group>"; };
+		C33AAC7D207E8C16001DA1A4 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		C3D73766206EB1E800EB0A0B /* YetiDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetiDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D73769206EB1E800EB0A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3D7376B206EB1E800EB0A0B /* PlanDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDateViewController.swift; sourceTree = "<group>"; };
+		C3D7376E206EB1E800EB0A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3D73770206EB1EA00EB0A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D73773206EB1EA00EB0A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3D73775206EB1EA00EB0A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D7377F2072AE0E00EB0A0B /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		F1A964151B616DC82915D448 /* Pods-YetiDate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YetiDate.release.xcconfig"; path = "Pods/Target Support Files/Pods-YetiDate/Pods-YetiDate.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D73763206EB1E800EB0A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE48080FDC17096B987A559 /* Pods_YetiDate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F25F9820AE3F1E00B0315A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42F25F9C20AE3F8000B0315A /* SearchClientDelegate.swift */,
+				42E8DB5820AB11AE0009A206 /* SearchColleague.swift */,
+				42F25F9A20AE3F2800B0315A /* SearchColleagueMediating.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		42F25FA020AE6B6000B0315A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42F25FA120AE6B7000B0315A /* CLLocationCoordinate2D+Hashable.swift */,
+				42E0393520B052C600676A85 /* YLPCoordinate+CLLocationCoordinate2D.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42F25FA320AE709100B0315A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42F25FA420AE70A000B0315A /* ContestedAnnotationTool.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5337ABAD3DA30D77EDC2A2FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				911AD5A8FEB4681A325230EE /* Pods-YetiDate.debug.xcconfig */,
+				F1A964151B616DC82915D448 /* Pods-YetiDate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3A67139638C8A7767A18AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C74737C893B34921C2ABED8 /* Pods_YetiDate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3D7375D206EB1E800EB0A0B = {
+			isa = PBXGroup;
+			children = (
+				C3D73768206EB1E800EB0A0B /* YetiDate */,
+				C3D73767206EB1E800EB0A0B /* Products */,
+				5337ABAD3DA30D77EDC2A2FD /* Pods */,
+				C3A67139638C8A7767A18AE4 /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		C3D73767206EB1E800EB0A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D73766206EB1E800EB0A0B /* YetiDate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D73768206EB1E800EB0A0B /* YetiDate */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7377B206EB20300EB0A0B /* AppDelegate */,
+				C3D7377C206EB21300EB0A0B /* Controllers */,
+				42F25FA020AE6B6000B0315A /* Extensions */,
+				C3DBA0A7207D394000306D04 /* SearchClient */,
+				C3D7377E206EB22900EB0A0B /* Resources */,
+				42F25FA320AE709100B0315A /* Utils */,
+				C3DBA0A3207D2C6200306D04 /* ViewModels */,
+				C3D7377D206EB21E00EB0A0B /* Views */,
+			);
+			path = YetiDate;
+			sourceTree = "<group>";
+		};
+		C3D7377B206EB20300EB0A0B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C3D73769206EB1E800EB0A0B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C3D7377C206EB21300EB0A0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7376B206EB1E800EB0A0B /* PlanDateViewController.swift */,
+				42E0392F20B02E1700676A85 /* ReviewDateDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3D7377D206EB21E00EB0A0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42E0393320B03DA000676A85 /* BusinessTableViewCell.swift */,
+				C3D7376D206EB1E800EB0A0B /* Main.storyboard */,
+				C3D73772206EB1EA00EB0A0B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3D7377E206EB22900EB0A0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3D73770206EB1EA00EB0A0B /* Assets.xcassets */,
+				C3D7377F2072AE0E00EB0A0B /* APIKeys.swift */,
+				C3D73775206EB1EA00EB0A0B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3DBA0A3207D2C6200306D04 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C31F894D207C88960017FD25 /* BusinessMapViewModel.swift */,
+				42E0393120B03B4800676A85 /* BusinessTableViewModel.swift */,
+				423102C020B02192002AA4D9 /* YelpCategory.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3DBA0A7207D394000306D04 /* SearchClient */ = {
+			isa = PBXGroup;
+			children = (
+				42F25F9820AE3F1E00B0315A /* Protocols */,
+				C33AAC7D207E8C16001DA1A4 /* Mediator.swift */,
+				42F25F9620AE3DE400B0315A /* SearchClient.swift */,
+				42F25F9E20AE405300B0315A /* YelpSearchColleague.swift */,
+			);
+			path = SearchClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D73765206EB1E800EB0A0B /* YetiDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D73778206EB1EA00EB0A0B /* Build configuration list for PBXNativeTarget "YetiDate" */;
+			buildPhases = (
+				2105CD6BE23BD3C31FB73B67 /* [CP] Check Pods Manifest.lock */,
+				C3D73762206EB1E800EB0A0B /* Sources */,
+				C3D73763206EB1E800EB0A0B /* Frameworks */,
+				C3D73764206EB1E800EB0A0B /* Resources */,
+				8B31C6AB69460970A818EFFC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YetiDate;
+			productName = YetiDate;
+			productReference = C3D73766206EB1E800EB0A0B /* YetiDate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D7375E206EB1E800EB0A0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					C3D73765206EB1E800EB0A0B = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = C3D73761206EB1E800EB0A0B /* Build configuration list for PBXProject "YetiDate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D7375D206EB1E800EB0A0B;
+			productRefGroup = C3D73767206EB1E800EB0A0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D73765206EB1E800EB0A0B /* YetiDate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D73764206EB1E800EB0A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D73774206EB1EA00EB0A0B /* LaunchScreen.storyboard in Resources */,
+				C3D73771206EB1EA00EB0A0B /* Assets.xcassets in Resources */,
+				C3D7376F206EB1E800EB0A0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2105CD6BE23BD3C31FB73B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YetiDate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B31C6AB69460970A818EFFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YetiDate/Pods-YetiDate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YetiDate/Pods-YetiDate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YetiDate/Pods-YetiDate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D73762206EB1E800EB0A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D737802072AE0E00EB0A0B /* APIKeys.swift in Sources */,
+				42F25FA220AE6B7000B0315A /* CLLocationCoordinate2D+Hashable.swift in Sources */,
+				42E0393020B02E1700676A85 /* ReviewDateDetailsViewController.swift in Sources */,
+				C3D7376C206EB1E800EB0A0B /* PlanDateViewController.swift in Sources */,
+				42F25F9720AE3DE400B0315A /* SearchClient.swift in Sources */,
+				42E0393420B03DA000676A85 /* BusinessTableViewCell.swift in Sources */,
+				42F25F9D20AE3F8000B0315A /* SearchClientDelegate.swift in Sources */,
+				42E0393220B03B4800676A85 /* BusinessTableViewModel.swift in Sources */,
+				42E8DB5920AB11AE0009A206 /* SearchColleague.swift in Sources */,
+				42E0393620B052C600676A85 /* YLPCoordinate+CLLocationCoordinate2D.swift in Sources */,
+				C3D7376A206EB1E800EB0A0B /* AppDelegate.swift in Sources */,
+				C33AAC7E207E8C16001DA1A4 /* Mediator.swift in Sources */,
+				423102C120B02192002AA4D9 /* YelpCategory.swift in Sources */,
+				42F25F9F20AE405300B0315A /* YelpSearchColleague.swift in Sources */,
+				C31F894E207C88960017FD25 /* BusinessMapViewModel.swift in Sources */,
+				42F25FA520AE70A000B0315A /* ContestedAnnotationTool.swift in Sources */,
+				42F25F9B20AE3F2800B0315A /* SearchColleagueMediating.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3D7376D206EB1E800EB0A0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D7376E206EB1E800EB0A0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D73772206EB1EA00EB0A0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D73773206EB1EA00EB0A0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3D73776206EB1EA00EB0A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3D73777206EB1EA00EB0A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3D73779206EB1EA00EB0A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 911AD5A8FEB4681A325230EE /* Pods-YetiDate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/YetiDate/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.pancake.YetiDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3D7377A206EB1EA00EB0A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A964151B616DC82915D448 /* Pods-YetiDate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/YetiDate/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.js.pancake.YetiDate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D73761206EB1E800EB0A0B /* Build configuration list for PBXProject "YetiDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D73776206EB1EA00EB0A0B /* Debug */,
+				C3D73777206EB1EA00EB0A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D73778206EB1EA00EB0A0B /* Build configuration list for PBXNativeTarget "YetiDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D73779206EB1EA00EB0A0B /* Debug */,
+				C3D7377A206EB1EA00EB0A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3D7375E206EB1E800EB0A0B /* Project object */;
+}

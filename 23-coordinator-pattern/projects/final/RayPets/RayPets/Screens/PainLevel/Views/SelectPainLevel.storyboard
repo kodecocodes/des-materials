@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mze-iR-FIC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Any Pain?-->
+        <scene sceneID="ADu-17-dDK">
+            <objects>
+                <viewController storyboardIdentifier="SelectPainLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aat-zp-Deb" customClass="SelectPainLevelViewController" customModule="RayPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SrP-BG-KHC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much pain does your pet seem to have?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OE-qf-Lb9">
+                                <rect key="frame" x="16" y="96" width="343" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUS-jl-SJV">
+                                <rect key="frame" x="0.0" y="153.5" width="375" height="433.5"/>
+                                <connections>
+                                    <segue destination="LK2-Fj-ufX" kind="embed" id="EVl-wE-igg"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-Ql-4Oq">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3UA-R5-ChU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Sounds Right">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressOkayButton:" destination="aat-zp-Deb" eventType="touchUpInside" id="Uga-Bt-ags"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VUS-jl-SJV" firstAttribute="top" secondItem="8OE-qf-Lb9" secondAttribute="bottom" id="0d4-R7-Onm"/>
+                            <constraint firstItem="6lf-Aj-6J9" firstAttribute="trailing" secondItem="8OE-qf-Lb9" secondAttribute="trailing" constant="16" id="7f2-tF-UFL"/>
+                            <constraint firstItem="hIg-Ql-4Oq" firstAttribute="top" secondItem="VUS-jl-SJV" secondAttribute="bottom" id="GFn-9r-jbe"/>
+                            <constraint firstItem="8OE-qf-Lb9" firstAttribute="leading" secondItem="6lf-Aj-6J9" secondAttribute="leading" constant="16" id="HnH-xY-meT"/>
+                            <constraint firstItem="hIg-Ql-4Oq" firstAttribute="trailing" secondItem="6lf-Aj-6J9" secondAttribute="trailing" id="R3Z-kJ-zjD"/>
+                            <constraint firstItem="hIg-Ql-4Oq" firstAttribute="bottom" secondItem="6lf-Aj-6J9" secondAttribute="bottom" id="X2K-Hm-PoH"/>
+                            <constraint firstItem="VUS-jl-SJV" firstAttribute="trailing" secondItem="6lf-Aj-6J9" secondAttribute="trailing" id="bBR-JJ-c5h"/>
+                            <constraint firstItem="8OE-qf-Lb9" firstAttribute="top" secondItem="6lf-Aj-6J9" secondAttribute="top" constant="32" id="buu-2G-ehT"/>
+                            <constraint firstItem="VUS-jl-SJV" firstAttribute="leading" secondItem="6lf-Aj-6J9" secondAttribute="leading" id="fK5-12-fP0"/>
+                            <constraint firstItem="hIg-Ql-4Oq" firstAttribute="leading" secondItem="6lf-Aj-6J9" secondAttribute="leading" id="yq2-r3-1ZJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6lf-Aj-6J9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Any Pain?" id="Vqy-ct-hSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOu-ud-aJC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="790.25487256371821"/>
+        </scene>
+        <!--Pain Level View Controller-->
+        <scene sceneID="Qu2-dF-yPA">
+            <objects>
+                <viewController storyboardIdentifier="PainLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gBL-ug-59I" customClass="PainLevelViewController" customModule="RayPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHF-ea-Ayi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="433.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-ZG-lYY">
+                                <rect key="frame" x="32" y="32" width="311" height="369.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_level_worst_possible" translatesAutoresizingMaskIntoConstraints="NO" id="fLg-be-dSw">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="324.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="The worst pain possible!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB4-JU-8ok">
+                                        <rect key="frame" x="0.0" y="340.5" width="311" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CqY-Bh-Yet" firstAttribute="bottom" secondItem="wcm-ZG-lYY" secondAttribute="bottom" constant="32" id="Bva-Tv-uBd"/>
+                            <constraint firstItem="wcm-ZG-lYY" firstAttribute="top" secondItem="CqY-Bh-Yet" secondAttribute="top" constant="32" id="JoV-t3-l4n"/>
+                            <constraint firstItem="CqY-Bh-Yet" firstAttribute="trailing" secondItem="wcm-ZG-lYY" secondAttribute="trailing" constant="32" id="Z1g-b0-MvF"/>
+                            <constraint firstItem="wcm-ZG-lYY" firstAttribute="leading" secondItem="CqY-Bh-Yet" secondAttribute="leading" constant="32" id="aML-D6-8s8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CqY-Bh-Yet"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fLg-be-dSw" id="2It-7E-eDC"/>
+                        <outlet property="label" destination="oB4-JU-8ok" id="AP2-fC-9H2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMa-W5-YLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="1937"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="lTv-l5-eik">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="LK2-Fj-ufX" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="gBL-ug-59I" kind="show" identifier="showPainLevelViewController" id="TQp-Yh-E01"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sr1-6R-xL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="1395"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JQj-p6-HtA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mze-iR-FIC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GsV-S3-ESR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aat-zp-Deb" kind="relationship" relationship="rootViewController" id="HR7-xL-VpO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dz1-DF-xYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.60000000000002" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pain_level_worst_possible" width="311" height="311"/>
+    </resources>
+</document>

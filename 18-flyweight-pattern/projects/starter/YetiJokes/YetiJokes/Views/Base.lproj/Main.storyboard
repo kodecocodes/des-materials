@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YetiJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WVj-ly-l5z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPl-Gt-kbq">
+                                <rect key="frame" x="36" y="228" width="303.5" height="152"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BPl-Gt-kbq" secondAttribute="height" multiplier="2:1" id="2fs-dd-J9L"/>
+                                </constraints>
+                                <string key="text">What do you call a yeti with a six pack?
+
+An abdominal snowman</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tme-zb-5GN">
+                                <rect key="frame" x="16" y="624" width="191" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="DvV-GF-p5F"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IPc-44-mSI"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMS-Vl-B4D">
+                                <rect key="frame" x="272" y="624" width="83" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="New Joke">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="newJokePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMc-Dm-Q8K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WVj-ly-l5z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Cl-1z-z08"/>
+                            <constraint firstItem="BPl-Gt-kbq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3mW-bh-baD"/>
+                            <constraint firstAttribute="trailing" secondItem="BMS-Vl-B4D" secondAttribute="trailing" constant="20" id="EQq-Z1-QxR"/>
+                            <constraint firstItem="BPl-Gt-kbq" firstAttribute="centerX" secondItem="WVj-ly-l5z" secondAttribute="centerX" id="GyI-0m-ppv"/>
+                            <constraint firstItem="WVj-ly-l5z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PoU-YY-kR9"/>
+                            <constraint firstItem="BMS-Vl-B4D" firstAttribute="bottom" secondItem="tme-zb-5GN" secondAttribute="bottom" id="Qc4-XT-g9e"/>
+                            <constraint firstItem="tme-zb-5GN" firstAttribute="top" secondItem="WVj-ly-l5z" secondAttribute="bottom" constant="16" id="RKD-YI-Ta2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tme-zb-5GN" secondAttribute="bottom" constant="15" id="We7-WG-c40"/>
+                            <constraint firstItem="BPl-Gt-kbq" firstAttribute="centerY" secondItem="WVj-ly-l5z" secondAttribute="centerY" id="YJR-hl-f8j"/>
+                            <constraint firstItem="WVj-ly-l5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cOW-0V-esY"/>
+                            <constraint firstItem="BMS-Vl-B4D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tme-zb-5GN" secondAttribute="trailing" constant="8" id="krd-hJ-Hr6"/>
+                            <constraint firstItem="BMS-Vl-B4D" firstAttribute="height" secondItem="tme-zb-5GN" secondAttribute="height" id="sRm-Su-HKv"/>
+                            <constraint firstItem="tme-zb-5GN" firstAttribute="leading" secondItem="WVj-ly-l5z" secondAttribute="leading" constant="16" id="xJ6-Iv-RtD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="BPl-Gt-kbq" id="44D-2u-Rg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1104" height="1104"/>
+    </resources>
+</document>

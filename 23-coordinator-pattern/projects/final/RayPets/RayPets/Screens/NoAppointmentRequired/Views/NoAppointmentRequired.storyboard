@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUh-7Q-Jlm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Just Stop By!-->
+        <scene sceneID="gdc-To-RVP">
+            <objects>
+                <viewController storyboardIdentifier="NoAppointmentRequiredViewController" id="wee-xT-sEC" customClass="NoAppointmentRequiredViewController" customModule="RayPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GIT-b8-pJS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_appointment_owl" translatesAutoresizingMaskIntoConstraints="NO" id="Ckb-sk-BGw">
+                                <rect key="frame" x="37.5" y="157" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-24-28N">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZHT-iw-r2w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Ok, thanks!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressOkay:" destination="wee-xT-sEC" eventType="touchUpInside" id="fUz-6P-Zyf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="No Appointment needed!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KnU-Vp-DP8">
+                                <rect key="frame" x="16" y="80" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Just stop by our office" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vng-R0-bDT">
+                                <rect key="frame" x="16" y="117" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ckb-sk-BGw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="86D-pt-2wV" secondAttribute="leading" constant="16" id="5Qt-Pc-Jjc"/>
+                            <constraint firstItem="86D-pt-2wV" firstAttribute="trailing" secondItem="KnU-Vp-DP8" secondAttribute="trailing" constant="16" id="6t7-lW-Ksz"/>
+                            <constraint firstItem="KnU-Vp-DP8" firstAttribute="top" secondItem="86D-pt-2wV" secondAttribute="top" constant="16" id="8BR-GS-6cV"/>
+                            <constraint firstItem="bF3-24-28N" firstAttribute="trailing" secondItem="86D-pt-2wV" secondAttribute="trailing" id="Jiu-nd-yuM"/>
+                            <constraint firstItem="Ckb-sk-BGw" firstAttribute="centerX" secondItem="GIT-b8-pJS" secondAttribute="centerX" id="XHJ-ZN-qF9"/>
+                            <constraint firstItem="bF3-24-28N" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ckb-sk-BGw" secondAttribute="bottom" constant="16" id="YvH-5u-bM3"/>
+                            <constraint firstItem="Ckb-sk-BGw" firstAttribute="top" secondItem="vng-R0-bDT" secondAttribute="bottom" constant="16" id="ZcT-B8-Sk7"/>
+                            <constraint firstItem="vng-R0-bDT" firstAttribute="leading" secondItem="86D-pt-2wV" secondAttribute="leading" constant="16" id="bub-Vg-hUL"/>
+                            <constraint firstItem="86D-pt-2wV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ckb-sk-BGw" secondAttribute="trailing" constant="16" id="ebd-I5-BjX"/>
+                            <constraint firstItem="bF3-24-28N" firstAttribute="bottom" secondItem="86D-pt-2wV" secondAttribute="bottom" id="fbO-Qb-hl2"/>
+                            <constraint firstItem="KnU-Vp-DP8" firstAttribute="leading" secondItem="86D-pt-2wV" secondAttribute="leading" constant="16" id="l0N-Ma-J0d"/>
+                            <constraint firstItem="86D-pt-2wV" firstAttribute="trailing" secondItem="vng-R0-bDT" secondAttribute="trailing" constant="16" id="qx3-K3-VJr"/>
+                            <constraint firstItem="vng-R0-bDT" firstAttribute="top" secondItem="KnU-Vp-DP8" secondAttribute="bottom" constant="8" id="saX-W9-ofa"/>
+                            <constraint firstItem="bF3-24-28N" firstAttribute="leading" secondItem="86D-pt-2wV" secondAttribute="leading" id="uoA-sa-mkD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="86D-pt-2wV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Just Stop By!" id="sCA-K1-ld0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2d-7w-Gad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="161.46926536731635"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H3H-Ke-RlE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUh-7Q-Jlm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sg6-9X-9rw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wee-xT-sEC" kind="relationship" relationship="rootViewController" id="ZN1-vo-96Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiD-ZA-HkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="161.46926536731635"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no_appointment_owl" width="300" height="300"/>
+    </resources>
+</document>

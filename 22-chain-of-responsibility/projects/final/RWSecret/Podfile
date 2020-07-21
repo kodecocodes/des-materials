@@ -1,0 +1,7 @@
+platform :ios, '13.0'
+
+target 'RWSecret' do
+  use_frameworks!  
+  pod 'SwiftKeychainWrapper', '3.2.0', :inhibit_warnings => true
+  pod 'RNCryptor', '5.0.3', :inhibit_warnings => true  
+end

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="arK-dc-wZ5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Are you sure?-->
+        <scene sceneID="WOh-Vx-lVF">
+            <objects>
+                <viewController storyboardIdentifier="FakingItViewController" id="QT0-mp-p9h" customClass="FakingItViewController" customModule="RayPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXv-3h-qWb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AU-WH-p8W">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lQB-Xu-3g8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Probably faking it...">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectFake:" destination="QT0-mp-p9h" eventType="touchUpInside" id="czP-ZI-VZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-Zn-b6a">
+                                <rect key="frame" x="0.0" y="531" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.59607843140000005" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gv8-yC-SIo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Yes, it's real !">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectNotFake:" destination="QT0-mp-p9h" eventType="touchUpInside" id="7rn-Ci-MBr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could your pet be faking it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lks-4i-xWv">
+                                <rect key="frame" x="16" y="80" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faking_it" translatesAutoresizingMaskIntoConstraints="NO" id="Xcv-HV-5gj">
+                                <rect key="frame" x="32" y="125" width="311" height="311"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hJy-Zn-b6a" firstAttribute="trailing" secondItem="WXv-3h-qWb" secondAttribute="trailing" id="6fw-zM-eZY"/>
+                            <constraint firstItem="6AU-WH-p8W" firstAttribute="bottom" secondItem="TgX-W4-BCQ" secondAttribute="bottom" id="6pn-rn-ICQ"/>
+                            <constraint firstItem="Xcv-HV-5gj" firstAttribute="centerX" secondItem="WXv-3h-qWb" secondAttribute="centerX" id="CT2-1b-zqa"/>
+                            <constraint firstItem="Lks-4i-xWv" firstAttribute="leading" secondItem="TgX-W4-BCQ" secondAttribute="leading" constant="16" id="FmY-Yu-rxM"/>
+                            <constraint firstItem="6AU-WH-p8W" firstAttribute="leading" secondItem="WXv-3h-qWb" secondAttribute="leading" id="IfO-Vc-b4J"/>
+                            <constraint firstItem="TgX-W4-BCQ" firstAttribute="trailing" secondItem="Lks-4i-xWv" secondAttribute="trailing" constant="16" id="RO8-CJ-rld"/>
+                            <constraint firstItem="Xcv-HV-5gj" firstAttribute="top" secondItem="Lks-4i-xWv" secondAttribute="bottom" constant="16" id="cEB-6n-6IX"/>
+                            <constraint firstItem="hJy-Zn-b6a" firstAttribute="leading" secondItem="WXv-3h-qWb" secondAttribute="leading" id="cdq-FT-vDk"/>
+                            <constraint firstItem="Lks-4i-xWv" firstAttribute="top" secondItem="TgX-W4-BCQ" secondAttribute="top" constant="16" id="gKs-5k-43d"/>
+                            <constraint firstItem="6AU-WH-p8W" firstAttribute="top" secondItem="hJy-Zn-b6a" secondAttribute="bottom" constant="16" id="kZz-M2-FBq"/>
+                            <constraint firstItem="TgX-W4-BCQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xcv-HV-5gj" secondAttribute="trailing" constant="16" id="psP-lV-ecI"/>
+                            <constraint firstItem="Xcv-HV-5gj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TgX-W4-BCQ" secondAttribute="leading" constant="16" id="r4a-u9-4am"/>
+                            <constraint firstItem="hJy-Zn-b6a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xcv-HV-5gj" secondAttribute="bottom" constant="16" id="wHX-Rs-gSi"/>
+                            <constraint firstItem="6AU-WH-p8W" firstAttribute="trailing" secondItem="WXv-3h-qWb" secondAttribute="trailing" id="zuC-Ei-rFk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TgX-W4-BCQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Are you sure?" id="p3m-Rv-eDo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwe-5E-AtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093.5999999999999" y="-257.72113943028489"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fJO-9k-8Qg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="arK-dc-wZ5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8G2-2E-L7B">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QT0-mp-p9h" kind="relationship" relationship="rootViewController" id="hMH-mA-qqh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K76-vJ-g10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="-256.82158920539734"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="faking_it" width="311" height="311"/>
+    </resources>
+</document>

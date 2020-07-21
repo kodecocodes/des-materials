@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Overview'/>
+        <page name='MVVM'/>
+        <page name='Factory'/>
+        <page name='Adapter'/>
+        <page name='Iterator'/>
+        <page name='Prototype'/>
+        <page name='State'/>
+        <page name='MulticastDelegate'/>
+        <page name='Facade'/>
+    </pages>
+</playground>

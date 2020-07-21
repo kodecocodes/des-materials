@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmL-MD-caq">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="c5b-E9-HW7">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="WmL-MD-caq" customClass="HomeViewController" customModule="RayPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmu-wJ-uiK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXa-eJ-pAU">
+                                <rect key="frame" x="0.0" y="656" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9OU-VF-c4H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Schedule Visit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressScheduleAppointment:" destination="WmL-MD-caq" eventType="touchUpInside" id="Iks-VK-lcE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1m-ms-0Ue">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-ll-r8Y">
+                                        <rect key="frame" x="16" y="145.33333333333334" width="382" height="365.33333333333326"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zdx-WD-MgU">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="300"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Ray's Pet Clinic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Qv-14-fCL">
+                                                <rect key="frame" x="0.0" y="308" width="382" height="57.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6Je-ll-r8Y" firstAttribute="leading" secondItem="N1m-ms-0Ue" secondAttribute="leading" constant="16" id="4lb-nW-kmt"/>
+                                    <constraint firstItem="6Je-ll-r8Y" firstAttribute="centerY" secondItem="N1m-ms-0Ue" secondAttribute="centerY" id="TVn-wj-fQE"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Je-ll-r8Y" secondAttribute="bottom" constant="16" id="eZG-IU-nG6"/>
+                                    <constraint firstItem="6Je-ll-r8Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="N1m-ms-0Ue" secondAttribute="top" constant="16" id="xK2-Ru-Tz5"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Je-ll-r8Y" secondAttribute="trailing" constant="16" id="zLz-Zo-fYr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sXa-eJ-pAU" firstAttribute="bottom" secondItem="A0O-xO-Op2" secondAttribute="bottom" id="28z-my-WHO"/>
+                            <constraint firstItem="N1m-ms-0Ue" firstAttribute="top" secondItem="kmu-wJ-uiK" secondAttribute="top" id="7x9-0W-rFw"/>
+                            <constraint firstItem="N1m-ms-0Ue" firstAttribute="trailing" secondItem="A0O-xO-Op2" secondAttribute="trailing" id="bn2-p5-pBs"/>
+                            <constraint firstItem="sXa-eJ-pAU" firstAttribute="top" secondItem="N1m-ms-0Ue" secondAttribute="bottom" id="dWO-NU-HBm"/>
+                            <constraint firstItem="N1m-ms-0Ue" firstAttribute="leading" secondItem="A0O-xO-Op2" secondAttribute="leading" id="orU-I7-NXz"/>
+                            <constraint firstItem="sXa-eJ-pAU" firstAttribute="trailing" secondItem="A0O-xO-Op2" secondAttribute="trailing" id="wIb-uJ-JUB"/>
+                            <constraint firstItem="sXa-eJ-pAU" firstAttribute="leading" secondItem="A0O-xO-Op2" secondAttribute="leading" id="z7j-R9-eDN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0O-xO-Op2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTN-Zf-C1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.20000000000005" y="277.51124437781112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="300" height="300"/>
+    </resources>
+</document>

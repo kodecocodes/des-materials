@@ -1,0 +1,6 @@
+framework module YelpAPI {
+  umbrella header "YelpAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

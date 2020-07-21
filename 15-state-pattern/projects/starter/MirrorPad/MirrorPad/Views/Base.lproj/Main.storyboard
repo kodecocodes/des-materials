@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MirrorPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftH-QL-tww" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-ba-uIC" userLabel="Top Left Draw View" customClass="DrawView" customModule="MirrorPad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="172"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzk-HO-NZO" userLabel="Top Right Draw View" customClass="DrawView" customModule="MirrorPad" customModuleProvider="target">
+                                        <rect key="frame" x="333" y="0.0" width="334" height="172"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                <real key="value" value="-1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-fb-z72" userLabel="Bottom Left Draw View" customClass="DrawView" customModule="MirrorPad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="171" width="334.5" height="172"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                <real key="value" value="-1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOG-WR-OJq" userLabel="Bottom Right Draw View" customClass="DrawView" customModule="MirrorPad" customModuleProvider="target">
+                                        <rect key="frame" x="332.5" y="171" width="334.5" height="172"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                                <real key="value" value="-1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="scaleY">
+                                                <real key="value" value="-1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6G3-fb-z72" firstAttribute="height" secondItem="Kdf-ba-uIC" secondAttribute="height" id="0Dp-m5-6rs"/>
+                                    <constraint firstAttribute="bottom" secondItem="6G3-fb-z72" secondAttribute="bottom" id="CnB-yf-3ze"/>
+                                    <constraint firstItem="yzk-HO-NZO" firstAttribute="top" secondItem="ftH-QL-tww" secondAttribute="top" id="QKj-oE-8gj"/>
+                                    <constraint firstItem="hOG-WR-OJq" firstAttribute="width" secondItem="6G3-fb-z72" secondAttribute="width" id="RkD-74-2xH"/>
+                                    <constraint firstAttribute="trailing" secondItem="yzk-HO-NZO" secondAttribute="trailing" id="Wk4-oO-3mQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOG-WR-OJq" secondAttribute="bottom" id="abs-rh-Ruc"/>
+                                    <constraint firstAttribute="trailing" secondItem="hOG-WR-OJq" secondAttribute="trailing" id="c7S-3A-Fb6"/>
+                                    <constraint firstItem="yzk-HO-NZO" firstAttribute="leading" secondItem="Kdf-ba-uIC" secondAttribute="trailing" constant="-1" id="h4O-uc-4hh"/>
+                                    <constraint firstItem="6G3-fb-z72" firstAttribute="leading" secondItem="ftH-QL-tww" secondAttribute="leading" id="q6s-Kf-Qf4"/>
+                                    <constraint firstItem="Kdf-ba-uIC" firstAttribute="leading" secondItem="ftH-QL-tww" secondAttribute="leading" id="sSi-x4-kRV"/>
+                                    <constraint firstItem="hOG-WR-OJq" firstAttribute="top" secondItem="yzk-HO-NZO" secondAttribute="bottom" constant="-1" id="sUf-2I-a9n"/>
+                                    <constraint firstItem="6G3-fb-z72" firstAttribute="top" secondItem="Kdf-ba-uIC" secondAttribute="bottom" constant="-1" id="u4B-Tb-5dx"/>
+                                    <constraint firstItem="Kdf-ba-uIC" firstAttribute="top" secondItem="ftH-QL-tww" secondAttribute="top" id="vnD-eV-A24"/>
+                                    <constraint firstItem="hOG-WR-OJq" firstAttribute="height" secondItem="yzk-HO-NZO" secondAttribute="height" id="xsv-3c-6A1"/>
+                                    <constraint firstItem="hOG-WR-OJq" firstAttribute="leading" secondItem="6G3-fb-z72" secondAttribute="trailing" constant="-2" id="yWM-20-1nc"/>
+                                    <constraint firstItem="yzk-HO-NZO" firstAttribute="width" secondItem="Kdf-ba-uIC" secondAttribute="width" id="yuo-it-Jn2"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yux-Pw-Q0X" userLabel="Horizontal Divider">
+                                <rect key="frame" x="0.0" y="170.5" width="667" height="2"/>
+                                <color key="backgroundColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="n1f-wT-hdn"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RC-Kp-DRc" userLabel="Vertical Divider">
+                                <rect key="frame" x="332" y="0.0" width="2" height="343"/>
+                                <color key="backgroundColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="fSC-4J-0ea"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qii-1B-7ja">
+                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gCY-dw-ljF"/>
+                                    <barButtonItem title="Share" id="mIm-cU-vbs">
+                                        <connections>
+                                            <action selector="sharePressed:" destination="BYZ-38-t0r" id="UI4-pm-XUI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qoe-un-sTM"/>
+                                    <barButtonItem title="Clear" id="xM6-As-WrN">
+                                        <connections>
+                                            <action selector="clearPressed:" destination="BYZ-38-t0r" id="ORo-RE-0Gn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xBg-8a-bzZ"/>
+                                    <barButtonItem title="Animate" id="QZw-ZW-iwP">
+                                        <connections>
+                                            <action selector="animatePressed:" destination="BYZ-38-t0r" id="sP8-Ss-8w3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hpt-6l-BKu"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qii-1B-7ja" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0E3-xc-0ai"/>
+                            <constraint firstItem="ftH-QL-tww" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AlK-V1-OOI"/>
+                            <constraint firstItem="ftH-QL-tww" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FfE-c3-bh5"/>
+                            <constraint firstAttribute="top" secondItem="7RC-Kp-DRc" secondAttribute="top" id="WD5-Cq-xvu"/>
+                            <constraint firstItem="yux-Pw-Q0X" firstAttribute="centerY" secondItem="ftH-QL-tww" secondAttribute="centerY" id="WSk-hd-qgt"/>
+                            <constraint firstItem="Qii-1B-7ja" firstAttribute="top" secondItem="ftH-QL-tww" secondAttribute="bottom" id="bAl-jE-vkm"/>
+                            <constraint firstItem="yux-Pw-Q0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d5v-au-2JC"/>
+                            <constraint firstItem="Qii-1B-7ja" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g0E-6X-wZE"/>
+                            <constraint firstAttribute="trailing" secondItem="yux-Pw-Q0X" secondAttribute="trailing" id="iED-M5-aAv"/>
+                            <constraint firstItem="Qii-1B-7ja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l5L-z2-xm0"/>
+                            <constraint firstItem="Qii-1B-7ja" firstAttribute="top" secondItem="7RC-Kp-DRc" secondAttribute="bottom" id="mQx-pP-9Rn"/>
+                            <constraint firstItem="ftH-QL-tww" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vfF-2l-xhF"/>
+                            <constraint firstItem="7RC-Kp-DRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z7h-2D-tZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawViewContainer" destination="ftH-QL-tww" id="vuI-um-uov"/>
+                        <outlet property="inputDrawView" destination="Kdf-ba-uIC" id="NbQ-wP-FGi"/>
+                        <outletCollection property="mirrorDrawViews" destination="yzk-HO-NZO" collectionClass="NSMutableArray" id="hRe-F7-9S2"/>
+                        <outletCollection property="mirrorDrawViews" destination="6G3-fb-z72" collectionClass="NSMutableArray" id="Fm9-HU-Ubn"/>
+                        <outletCollection property="mirrorDrawViews" destination="hOG-WR-OJq" collectionClass="NSMutableArray" id="lQm-jL-6NC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="132"/>
+        </scene>
+    </scenes>
+</document>
