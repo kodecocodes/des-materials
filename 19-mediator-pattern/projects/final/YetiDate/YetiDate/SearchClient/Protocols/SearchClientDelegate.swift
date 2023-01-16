@@ -29,7 +29,7 @@
 import YelpAPI
 
 // MARK: - SearchClientDelegate
-public protocol SearchClientDelegate: class {
+public protocol SearchClientDelegate: AnyObject {
 
   func searchClient(_ searchClient: SearchClient,
                     didSelect business: YLPBusiness,

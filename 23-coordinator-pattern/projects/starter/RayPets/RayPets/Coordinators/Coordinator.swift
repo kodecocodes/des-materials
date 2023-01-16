@@ -26,7 +26,7 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-public protocol Coordinator: class {
+public protocol Coordinator: AnyObject {
 
   var children: [Coordinator] { get set }
   var router: Router { get }

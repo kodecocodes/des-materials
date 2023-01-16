@@ -29,7 +29,7 @@
 import CoreLocation.CLLocation
 import YelpAPI
 
-public protocol SearchColleague: class {
+public protocol SearchColleague: AnyObject {
 
   var category: YelpCategory { get }
   var selectedBusiness: YLPBusiness? { get }

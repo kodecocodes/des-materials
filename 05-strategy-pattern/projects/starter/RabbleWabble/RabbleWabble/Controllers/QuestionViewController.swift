@@ -28,7 +28,7 @@
 
 import UIKit
 
-public protocol QuestionViewControllerDelegate: class {
+public protocol QuestionViewControllerDelegate: AnyObject {
   
   // 1
   func questionViewController(

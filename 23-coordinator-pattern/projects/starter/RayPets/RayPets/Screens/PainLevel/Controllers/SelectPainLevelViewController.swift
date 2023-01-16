@@ -29,7 +29,7 @@
 import UIKit
 
 // MARK: - SelectPainLevelViewControllerDelegate
-public protocol SelectPainLevelViewControllerDelegate: class {
+public protocol SelectPainLevelViewControllerDelegate: AnyObject {
   func selectPainLevelViewController(_ controller: SelectPainLevelViewController,
                                      didSelect painLevel: PainLevel)
 }

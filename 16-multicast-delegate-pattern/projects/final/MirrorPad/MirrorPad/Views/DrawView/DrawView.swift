@@ -28,7 +28,7 @@
 
 import UIKit
 
-@objc public protocol DrawViewDelegate: class {
+@objc public protocol DrawViewDelegate: AnyObject {
   func drawView(_ source: DrawView, didAddLine line: LineShape)
   func drawView(_ source: DrawView, didAddPoint point: CGPoint)
 }

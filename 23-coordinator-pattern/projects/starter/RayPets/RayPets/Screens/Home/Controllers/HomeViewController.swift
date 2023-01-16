@@ -29,7 +29,7 @@
 import UIKit
 
 // MARK: - HomeViewControllerDelegate
-public protocol HomeViewControllerDelegate: class {
+public protocol HomeViewControllerDelegate: AnyObject {
   func homeViewControllerDidPressScheduleAppointment(_ viewController: HomeViewController)
 }
 
