@@ -28,7 +28,7 @@
 
 import UIKit
 
-public protocol DrawingSelectionViewControllerDelegate: class {
+public protocol DrawingSelectionViewControllerDelegate: AnyObject {
   func drawingSelectionViewControllerDidCancel(_ viewController: DrawingSelectionViewController)
 
   func drawingSelectionViewController(_ viewController: DrawingSelectionViewController,
