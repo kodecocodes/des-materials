@@ -28,7 +28,7 @@
 
 import Foundation
 
-public protocol QuestionStrategy: class {
+public protocol QuestionStrategy: AnyObject {
   var title: String { get }
   
   var correctCount: Int { get }

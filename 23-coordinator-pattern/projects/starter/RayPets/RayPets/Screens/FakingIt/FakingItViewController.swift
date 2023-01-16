@@ -29,7 +29,7 @@
 import UIKit
 
 // MARK: - FakingItViewControllerDelegate
-public protocol FakingItViewControllerDelegate: class {
+public protocol FakingItViewControllerDelegate: AnyObject {
   func fakingItViewControllerPressedIsFake(_ controller: FakingItViewController)
   func fakingItViewControllerPressedNotFake(_ controller: FakingItViewController)
 }

@@ -28,7 +28,7 @@
 
 import YelpAPI
 
-public protocol SearchColleagueMediating: class {
+public protocol SearchColleagueMediating: AnyObject {
 
   func searchColleague(_ searchColleague: SearchColleague,
                        didSelect business: YLPBusiness)
